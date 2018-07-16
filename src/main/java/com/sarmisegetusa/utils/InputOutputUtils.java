@@ -3,6 +3,7 @@ package com.sarmisegetusa.utils;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -31,17 +32,18 @@ public class InputOutputUtils {
 		ArrayList<Record> content = new ArrayList<Record>();
 		Scanner scanner = new Scanner(new File(path));
 
-		// Headers. First line of CSV is just headers
-		scanner.nextLine();
-
+		// Headers. Change for Dynamic CSV
+		String headers[] = scanner.nextLine().split("");
 		
 		while (scanner.hasNextLine()) { // Read every line in file
 			String values[] = scanner.nextLine().split(",");
 			// Create Record
 			Record record = new Record();
-			record.setFirstName(values[0]);
-			record.setLastName(values[1]);
-			record.setRole(values[2]);
+
+			for (int i = 0; i < headers.length; i++) {
+				record.addField(headers[i], values[i]);
+			}
+			
 			content.add(record);
 		}
 		scanner.close();
