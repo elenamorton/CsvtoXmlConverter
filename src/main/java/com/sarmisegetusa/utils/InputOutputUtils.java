@@ -93,9 +93,9 @@ public class InputOutputUtils {
 	 */
 	private static Element createRecordElement(Document document, Record record) {
 		Element recordElement = document.createElement("RECORD");
-		recordElement.appendChild(createSimpleXmlElement(document, "FIRST_NAME", record.getFirstName()));
-		recordElement.appendChild(createSimpleXmlElement(document, "LAST_NAME", record.getLastName()));
-		recordElement.appendChild(createSimpleXmlElement(document, "ROLE", record.getRole()));
+		for(Map.Entry<String, String> entry : record.getFields().entrySet()) {
+			recordElement.appendChild(createSimpleXmlElement(document, entry.getKey(), entry.getValue())); 
+		}
 		return recordElement;
 	}
 
