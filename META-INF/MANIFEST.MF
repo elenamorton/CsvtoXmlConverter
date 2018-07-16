@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Built-By: Elena
+Created-By: Apache Maven 4.0.0
+Build-Jdk: 1.8.0_171
+Main-Class: com.sarmisegetusa.csvtoxmlconverter.Main

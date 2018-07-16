@@ -30,3 +30,6 @@ A dummy application for a CSV to XML convertor JAR.
 * Make changes to support dynamic XML elements.
 * Write a batch command file.
 * Add unit tests.
+
+## Run command
+``` >java -jar csv-converter-1.0-SNAPSHOT.jar ```
