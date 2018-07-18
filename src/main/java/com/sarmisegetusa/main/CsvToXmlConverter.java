@@ -6,7 +6,7 @@ import com.sarmisegetusa.pojo.Record;
 import com.sarmisegetusa.utils.InputOutputUtils;
 
 /**
- * This class utilizes the InputOutputUtils class to read a CSV file and write its contents to an XML file.
+ * This class utilises the InputOutputUtils class to read a CSV file and write its contents to an XML file.
  * This is the starting point of the project. This class reads the CSV from input\input.csv (See the  Project Explorer window on left)
  * and writes XML to output\output.XML
  */
