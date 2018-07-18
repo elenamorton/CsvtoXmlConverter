@@ -1,6 +1,7 @@
 package com.sarmisegetusa.pojo;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  * 
@@ -8,22 +9,25 @@ import java.util.HashMap;
  *
  */
 public class Record {
-
+	final private int INITIAL_CAPACITY = 100;
+	final private boolean ACCESS_ORDER = false; //set to insert_order
+	final private float LOAD_FACTOR = (float)0.75;
+	
 	/** Employee Fields */
-	private HashMap<String, String> fields;
+	private LinkedHashMap<String, String> fields;
 
 	/** Constructor **/
 	public Record() {
-		fields = new HashMap<String, String>();
+		fields = new LinkedHashMap<String, String>(INITIAL_CAPACITY, LOAD_FACTOR, ACCESS_ORDER);
 	}
 	
 	/** Public methods */
 	
-	public HashMap<String, String> getFields() {
+	public LinkedHashMap<String, String> getFields() {
 		return fields;
 	}
 
-	public void setFields(HashMap<String, String> fields) {
+	public void setFields(LinkedHashMap<String, String> fields) {
 		this.fields = fields;
 	}
 
