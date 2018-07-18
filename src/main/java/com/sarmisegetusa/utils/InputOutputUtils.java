@@ -2,6 +2,7 @@ package com.sarmisegetusa.utils;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Map;
 
@@ -33,9 +34,11 @@ public class InputOutputUtils {
 		Scanner scanner = new Scanner(new File(path));
 
 		// Headers. Change for Dynamic CSV
-		String headers[] = scanner.nextLine().split("");
+		String headers[] = scanner.nextLine().split(",");
+		System.out.println(Arrays.toString(headers));
 		
-		while (scanner.hasNextLine()) { // Read every line in file
+		while (scanner.hasNextLine()) { 
+			// Read every line in file
 			String values[] = scanner.nextLine().split(",");
 			// Create Record
 			Record record = new Record();
