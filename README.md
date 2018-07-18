@@ -32,4 +32,4 @@ A dummy application for a CSV to XML convertor JAR.
 * Add unit tests.
 
 ## Run command
-``` >java -jar csv-converter-1.0-SNAPSHOT.jar ```
+``` >java -jar target\csv-converter.jar ```
