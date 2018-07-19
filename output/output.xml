@@ -4,40 +4,56 @@
     <FIRST_NAME>Peter</FIRST_NAME>
     <LAST_NAME>Curran</LAST_NAME>
     <ROLE>CEO</ROLE>
+    <Supervisor>Peter</Supervisor>
+    <TEAM>Sales</TEAM>
   </RECORD>
   <RECORD>
     <FIRST_NAME>Mark</FIRST_NAME>
     <LAST_NAME>Hughes</LAST_NAME>
     <ROLE>VP</ROLE>
+    <Supervisor>Peter</Supervisor>
+    <TEAM>Delivery</TEAM>
   </RECORD>
   <RECORD>
     <FIRST_NAME>Sathya</FIRST_NAME>
     <LAST_NAME>Raghavendran</LAST_NAME>
     <ROLE>VP</ROLE>
+    <Supervisor>Peter</Supervisor>
+    <TEAM>Sales</TEAM>
   </RECORD>
   <RECORD>
     <FIRST_NAME>Vijai</FIRST_NAME>
     <LAST_NAME>Natarajan</LAST_NAME>
     <ROLE>Software Development Engineer</ROLE>
+    <Supervisor>Tom</Supervisor>
+    <TEAM>Delivery</TEAM>
   </RECORD>
   <RECORD>
     <FIRST_NAME>Daniel</FIRST_NAME>
     <LAST_NAME>Hipke</LAST_NAME>
     <ROLE>Software Development Engineer</ROLE>
+    <Supervisor>Tom</Supervisor>
+    <TEAM>Delivery</TEAM>
   </RECORD>
   <RECORD>
     <FIRST_NAME>Kyle</FIRST_NAME>
     <LAST_NAME>Hipke</LAST_NAME>
     <ROLE>Software Development Engineer</ROLE>
+    <Supervisor>Tom</Supervisor>
+    <TEAM>Delivery</TEAM>
   </RECORD>
   <RECORD>
     <FIRST_NAME>Tom</FIRST_NAME>
     <LAST_NAME>Allen</LAST_NAME>
     <ROLE>Manager</ROLE>
+    <Supervisor>Peter</Supervisor>
+    <TEAM>Management</TEAM>
   </RECORD>
   <RECORD>
     <FIRST_NAME>Heather</FIRST_NAME>
     <LAST_NAME>Cross</LAST_NAME>
     <ROLE>Manager</ROLE>
+    <Supervisor>Peter</Supervisor>
+    <TEAM>Management</TEAM>
   </RECORD>
 </RECORDS>

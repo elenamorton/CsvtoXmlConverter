@@ -1,9 +1,9 @@
-FIRST_NAME,LAST_NAME,ROLE
-Peter,Curran,CEO
-Mark,Hughes,VP
-Sathya,Raghavendran,VP
-Vijai,Natarajan,Software Development Engineer
-Daniel,Hipke,Software Development Engineer
-Kyle,Hipke,Software Development Engineer
-Tom,Allen,Manager
-Heather,Cross,Manager
+FIRST_NAME,LAST_NAME,ROLE,Supervisor,TEAM
+Peter,Curran,CEO,Peter,Sales
+Mark,Hughes,VP,Peter,Delivery
+Sathya,Raghavendran,VP,Peter,Sales
+Vijai,Natarajan,Software Development Engineer,Tom,Delivery
+Daniel,Hipke,Software Development Engineer,Tom,Delivery
+Kyle,Hipke,Software Development Engineer,Tom,Delivery
+Tom,Allen,Manager,Peter,Management
+Heather,Cross,Manager,Peter,Management
